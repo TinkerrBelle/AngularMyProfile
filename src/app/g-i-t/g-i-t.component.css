@@ -1,0 +1,20 @@
+/* Background */
+.bg {
+  height: 950px;
+  color: #fff;
+  background-size: 100%;
+  background-size: cover;
+  background-image: url('../../assets/images/about.webp');
+  position: fixed;
+  top: 0px;
+  left: -230px;
+  z-index: -10;
+  width: 1920px;
+}
+  
+
+
+/* Page Content */
+.header {
+  height: 100vh;
+}

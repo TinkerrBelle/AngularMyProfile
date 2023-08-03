@@ -1,0 +1,22 @@
+
+
+
+/* Footer */
+
+footer {
+    height: 30px;
+    background-color: rgb(69, 68, 68);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 15px;
+    padding-right: 120px;
+}
+    
+
+#footCol {
+    flex: 1;
+    padding: 0 10px;
+    font-family: 'Work Sans', sans-serif;
+
+}

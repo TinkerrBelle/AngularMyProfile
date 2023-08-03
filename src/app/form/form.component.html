@@ -1,0 +1,70 @@
+<div class="container">
+    <h1>GET IN TOUCH</h1>
+
+    <div class="row">
+        <div class="column1" style="flex: 1;">
+            <div>
+                <h2>DON'T BE SHY</h2>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            </div>
+            <div style="line-height: 2px;">
+                <mat-icon [style.color]="iconColor">email</mat-icon>
+                <p>Mail me</p>
+                <p>info@mail.com</p>
+            </div>
+            <div style="line-height: 2px;">
+                <mat-icon [style.color]="iconColor">call</mat-icon>
+                <p>Call me</p>
+                <p>+ 1 333 454 55 44</p>
+            </div>
+
+        </div>
+
+        <div class="column2" style="flex: 2;">
+            <div class="form">
+                <form class="form-field-container">
+                    <!-- Name -->
+                    <mat-form-field class="form-field" appearance="fill">
+                        <mat-label>Full Name</mat-label>
+                        <input matInput placeholder="Enter your name">
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    </mat-form-field>
+                    
+                    
+                    <!-- Email -->
+                    <mat-form-field class="form-field">
+                        <mat-label>Email</mat-label>
+                        <input type="email" 
+                                matInput 
+                                [formControl]="emailFormControl" 
+                                [errorStateMatcher]="matcher"
+                                placeholder="Enter a valid email address">
+                        <mat-hint>pat@example.com</mat-hint>
+                        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                          Please enter a valid email address
+                        </mat-error>
+                        <mat-error *ngIf="emailFormControl.hasError('required')">
+                          Email is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                
+                
+                    <!-- Message -->
+                    <mat-form-field class="form-field">
+                        <mat-label>Leave a comment</mat-label>
+                        <textarea matInput placeholder="Enter your message"></textarea>
+                    </mat-form-field>
+                
+                
+                    <!-- Button -->
+                    <div class="button">
+                        <button mat-raised-button color="warn">SUBMIT</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  

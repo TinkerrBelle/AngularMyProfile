@@ -1,0 +1,58 @@
+/** Form Container **/
+.container {
+    margin: 0 auto; 
+    width: 50%;
+    font-family: 'Work Sans', sans-serif;
+
+
+}
+
+h1 {
+    color: #f44336;
+    font-size: 58px;
+    text-align: center;
+    
+}
+
+.row {
+    display: flex;
+    color: rgb(55, 53, 53);
+}
+
+.column2 {
+    padding: 20px;
+}
+
+
+
+/* Additional styles for the form if needed */ 
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+  
+.form-field-container {
+    display: flex;
+    flex-direction: column;
+}
+    
+.form-field {
+    margin-bottom: 20px; /* Adjust the value as per your desired spacing */
+}
+
+.button {
+    display: table-cell;
+    max-width: 600px;
+}
+
+.button .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+form {
+    background-color: rgb(170, 162, 162);
+    padding: 40px;
+}
+  
